@@ -1,4 +1,4 @@
-# 🗺️ SB Geospatial Analysis
+# 🗺️ Geospatial Analysis
 
 A comprehensive geospatial data collection and analysis system designed to gather business information from Google Maps and OneMap APIs for Singapore-based locations. This project enables systematic collection of business data including ratings, contact details, and postal codes through automated API calls and data processing.
 
