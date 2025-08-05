@@ -48,7 +48,7 @@ The system can collect data for various business types including:
 ## 🚀 Getting Started
 
 1. 📦 Install dependencies: `pip install -r requirements.txt`
-2. 🔑 Configure API credentials in `api_secrets.py`
+2. 🔑 Configure API credentials in `.env` file using `env.template`
 3. ⚙️ Adjust parameters in `key_parameters.py`
 4. ▶️ Run the main collection script: `python main.py`
 
@@ -73,7 +73,7 @@ This project is ideal for businesses, researchers, or analysts needing comprehen
 
 ## 🛠️ Setup
 1.) 📦 Run `pip install -r requirements.txt` to get all the required python packages\
-2.) 🔑 Create your own `api_secrets.py` file to access Google and OneMap API using `api_secrets_template.py`\
+2.) 🔑 Create your own `.env` file to access Google and OneMap API using `env.template`\
 3.) ⚙️ Check `key_parameters.py` for:\
     &ensp; a.) 📋 Parameter inputs for the respective API payloads. For required inputs by Google Maps API view [Project documentation](https://docs.google.com/document/d/1LMR_PapF468NU_nVOSQTbVeaDbuT1D0ERhoEOWYHWIM/edit)\
     &ensp; b.) 📊 Columns you want to return and column renaming. For list of columns that Google API will return: https://docs.google.com/document/d/1LMR_PapF468NU_nVOSQTbVeaDbuT1D0ERhoEOWYHWIM/edit#bookmark=id.ayiz52nuepcx\

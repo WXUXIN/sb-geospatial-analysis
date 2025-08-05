@@ -2,18 +2,21 @@ from Crobat import Crobat
 from search_classes.AreaSearch import AreaSearch
 from search_classes.PointSearch import PointSearch
 from LocationSplitter import LocationSplitter
-import api_secrets
+import os
+from dotenv import load_dotenv
 import key_parameters
 import pandas as pd
 import numpy as np
 from datetime import datetime
-import key_parameters
+
+# Load environment variables from .env file
+load_dotenv()
 
 startTime = datetime.now()
 # Asks users for their information through inputs
-google_map_api_key = api_secrets.GOOGLE_MAP_API_KEY
-onemap_email = api_secrets.ONEMAP_EMAIL
-onemap_password = api_secrets.ONEMAP_PASSWORD
+google_map_api_key = os.getenv('GOOGLE_MAP_API_KEY')
+onemap_email = os.getenv('ONEMAP_EMAIL')
+onemap_password = os.getenv('ONEMAP_PASSWORD')
 user = key_parameters.USER
 
 # Load the excel file containing the mall and busstop data
