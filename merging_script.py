@@ -29,9 +29,9 @@ def replace_with_contact_details(primary_data_with_ratings, enhanced_with_contac
 # Use dedup_function as a guide on how to use dedup_function_new, it shows the different file names from each member involved in the project
 def dedup_function(type, **kwargs):
   if type == 'single_run_dedup':
-    # d = pd.read_csv(os.path.join(key_parameters.INPUT_FOLDER_PATH, f'primary_data_{key_parameters.NEARBY_SEARCH_TYPE}_ben.csv'))
-    # e = pd.read_csv(os.path.join(key_parameters.INPUT_FOLDER_PATH, f'primary_data_{key_parameters.NEARBY_SEARCH_TYPE}_zaki.csv'))
-    # f = pd.read_csv(os.path.join(key_parameters.INPUT_FOLDER_PATH, f'primary_data_{key_parameters.NEARBY_SEARCH_TYPE}_royce.csv'))
+    # d = pd.read_csv(os.path.join(key_parameters.INPUT_FOLDER_PATH, f'primary_data_{key_parameters.NEARBY_SEARCH_TYPE}_user1.csv'))
+    # e = pd.read_csv(os.path.join(key_parameters.INPUT_FOLDER_PATH, f'primary_data_{key_parameters.NEARBY_SEARCH_TYPE}_user2.csv'))
+    # f = pd.read_csv(os.path.join(key_parameters.INPUT_FOLDER_PATH, f'primary_data_{key_parameters.NEARBY_SEARCH_TYPE}_user3.csv'))
 
     combined_primary_area = pd.concat(
       kwargs.values(),
@@ -46,9 +46,9 @@ def dedup_function(type, **kwargs):
                 , index=False)
     
   elif type == 'postal_code_run_dedup':
-    # d = pd.read_csv(os.path.join(key_parameters.INPUT_FOLDER_PATH, f'primary_data_with_postal_code_{key_parameters.NEARBY_SEARCH_TYPE}_ben.csv'))
-    # e = pd.read_csv(os.path.join(key_parameters.INPUT_FOLDER_PATH, f'primary_data_with_postal_code_{key_parameters.NEARBY_SEARCH_TYPE}_zaki.csv'))
-    # f = pd.read_csv(os.path.join(key_parameters.INPUT_FOLDER_PATH, f'primary_data_with_postal_code_{key_parameters.NEARBY_SEARCH_TYPE}_royce.csv'))
+    # d = pd.read_csv(os.path.join(key_parameters.INPUT_FOLDER_PATH, f'primary_data_with_postal_code_{key_parameters.NEARBY_SEARCH_TYPE}_user1.csv'))
+    # e = pd.read_csv(os.path.join(key_parameters.INPUT_FOLDER_PATH, f'primary_data_with_postal_code_{key_parameters.NEARBY_SEARCH_TYPE}_user2.csv'))
+    # f = pd.read_csv(os.path.join(key_parameters.INPUT_FOLDER_PATH, f'primary_data_with_postal_code_{key_parameters.NEARBY_SEARCH_TYPE}_user3.csv'))
 
     combined_primary_area = pd.concat(
       kwargs.values(),

@@ -2,9 +2,9 @@
 USER = 1
 NUMBER_OF_USERS = 3  # This is the number of users
 # Change to your output folder path, just use the same path as main.py, with output_files at the end
-OUTPUT_FOLDER_PATH = '/Users/benjamin.wang.int/crobat-gmap-scraper/output_files'
+OUTPUT_FOLDER_PATH = '/path/to/crobat-gmap-scraper/output_files'
 # Change to your input folder path, just use the same path as main.py, with input_files at the end
-INPUT_FOLDER_PATH = '/Users/benjamin.wang.int/crobat-gmap-scraper/input_files'
+INPUT_FOLDER_PATH = '/path/to/crobat-gmap-scraper/input_files'
 
 # This is the buffer time between each API call
 REVERSE_GEOCODE_API_CALL_BUFFER_TIME = 60 / 240
@@ -46,13 +46,13 @@ COLUMN_MAPPING = {
     'geometry.location.lng': 'long'
 }
 
-COMBINED_DATA = '/Users/benjamin.wang.int/crobat-gmap-scraper/input_files/combined_data.xlsx'
+COMBINED_DATA = '/path/to/crobat-gmap-scraper/input_files/combined_data.xlsx'
 # This is needed for the main_get_postal_code function to get the postal code
-PRIMARY_DATA = f'/Users/benjamin.wang.int/crobat-gmap-scraper/input_files/combined_primary_data_{NEARBY_SEARCH_TYPE}.csv'
+PRIMARY_DATA = f'/path/to/crobat-gmap-scraper/input_files/combined_primary_data_{NEARBY_SEARCH_TYPE}.csv'
 
-# This file is to contain Google outlets that are not in SB database, and are quality places to get contact details
+# This file is to contain Google outlets that are not in the internal database, and are quality places to get contact details
 # This is needed to get the contact details of the most high quality places
-PRIMARY_DATA_WITH_RATINGS = f'/Users/benjamin.wang.int/crobat-gmap-scraper/input_files/with_ratings.csv'
+PRIMARY_DATA_WITH_RATINGS = f'/path/to/crobat-gmap-scraper/input_files/with_ratings.csv'
 PLACE_DETAILS_DATA = 'formatted_phone_number,international_phone_number'
 NUMBER_OF_RATINGS_FILTER = 100
 RATINGS_FILTER = 4.0
